@@ -61,6 +61,41 @@ export const selectedWorkIntro = {
   },
 }
 
+export const proofIntro = {
+  eyebrow: 'Proof',
+  title: ['Good work,', 'remembered.'],
+  description: "A few words from people I've worked with, plus the signals that matter most.",
+}
+
+export const featuredTestimonial = {
+  quote: 'Mahdi translated our rough idea into a clean, fast website that felt exactly right.',
+  author: 'Aurelia Tan',
+  role: 'Founder, Aurelia Studio',
+}
+
+export const proofSignals = [
+  {
+    number: '01',
+    title: 'Clear communication',
+    description: "You're always in the loop, with updates that are easy to follow.",
+  },
+  {
+    number: '02',
+    title: 'Fast delivery',
+    description: 'Thoughtful planning and focus that keep projects moving.',
+  },
+  {
+    number: '03',
+    title: 'Clean handoff',
+    description: 'Organized files and clear docs so your team can move forward with confidence.',
+  },
+  {
+    number: '04',
+    title: 'Long-term support',
+    description: 'Ongoing care and improvements to keep your product strong over time.',
+  },
+]
+
 export const processIntro = {
   eyebrow: 'Process',
   title: ['How we work', 'together to deliver'],
