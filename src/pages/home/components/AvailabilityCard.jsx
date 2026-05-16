@@ -4,7 +4,7 @@ import { cardVariants } from '../homeMotion.js'
 function AvailabilityCard({ motionProps }) {
   return (
     <motion.div
-      className="mt-4 min-w-80 w-full md:absolute md:bottom-6 md:right-0 md:mt-0 md:w-[15rem]"
+      className="relative z-10 mx-auto w-full max-w-[15rem] -mt-10 sm:-mt-12 md:absolute md:bottom-6 md:right-0 md:mx-0 md:mt-0 md:w-[15rem] md:max-w-none"
       {...motionProps}
       variants={cardVariants}
     >

@@ -9,7 +9,7 @@ function HomePage() {
   const motionProps = createMotionProps(prefersReducedMotion)
 
   return (
-    <div className="min-h-screen bg-[color:var(--bg)] text-[color:var(--fg)]">
+    <div className="min-h-screen overflow-x-clip bg-[color:var(--bg)] text-[color:var(--fg)]">
       <div className="flex min-h-screen w-full flex-col">
         <Header motionProps={motionProps} />
 

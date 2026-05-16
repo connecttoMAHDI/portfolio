@@ -10,9 +10,9 @@ import TrustRow from './TrustRow.jsx'
 function HeroSection({ motionProps }) {
   return (
     <section className="w-full">
-      <SectionContainer className="pt-10 pb-8 lg:pt-8 lg:pb-20 ">
-        <div className="grid items-center gap-10 lg:grid-cols-[minmax(0,1.04fr)_minmax(23rem,0.88fr)] lg:gap-14">
-          <motion.div id="about" className="max-w-[42rem]" {...motionProps} variants={containerVariants}>
+      <SectionContainer className="pt-6 pb-12 sm:pt-8 sm:pb-16 md:pt-10 md:pb-20 lg:pt-8 lg:pb-[120px]">
+        <div className="grid items-start gap-7 md:gap-10 lg:grid-cols-[minmax(0,1.04fr)_minmax(21rem,0.88fr)] lg:items-center lg:gap-14">
+          <motion.div id="about" className="max-w-[42rem] scroll-mt-28 sm:scroll-mt-32" {...motionProps} variants={containerVariants}>
             <motion.p
               className="text-[0.7rem] font-medium uppercase tracking-[0.14em] text-[color:var(--muted)]"
               variants={itemVariants}
@@ -21,7 +21,7 @@ function HeroSection({ motionProps }) {
             </motion.p>
 
             <motion.h1
-              className="mt-5 max-w-[12ch] font-brand-serif text-[clamp(2.45rem,4.1vw,4.6rem)] font-thin leading-[0.94] tracking-[-0.075em] text-[color:var(--fg)]"
+              className="mt-5 max-w-[12ch] font-brand-serif text-[clamp(2.35rem,4.1vw,4.6rem)] font-thin leading-[1.06] tracking-[-0.075em] text-[color:var(--fg)] sm:text-[clamp(2.45rem,4.1vw,4.6rem)] sm:leading-[0.94]"
               variants={itemVariants}
             >
               <span className="block">{heroCopy.headline[0]}</span>
@@ -30,19 +30,16 @@ function HeroSection({ motionProps }) {
                 <span className="relative z-10">{heroCopy.headline[2]}</span>
                 <span
                   aria-hidden="true"
-                  className="absolute left-0 right-0 bottom-[-0.30em] -z-0 h-[1.2em] bg-[#EEEEE8]"
+                  className="absolute left-0 right-0 bottom-[-0.30em] -z-0 h-[1.3em] md:h-[1.2em] bg-[#EEEEE8]"
                 />
               </span>
             </motion.h1>
 
-            <motion.p
-              className="mt-6 max-w-[34ch] text-[0.95rem] leading-[1.6] text-[color:var(--muted-strong)] sm:text-[1rem]"
-              variants={itemVariants}
-            >
+            <motion.p className="mt-6 max-w-[34ch] text-[0.93rem] leading-[1.6] text-[color:var(--muted-strong)] sm:text-[1rem]" variants={itemVariants}>
               {heroCopy.description}
             </motion.p>
 
-            <motion.div className="mt-7 flex flex-col gap-4 sm:flex-row sm:items-center" variants={itemVariants}>
+            <motion.div className="mt-6 flex flex-col-reverse gap-5 sm:flex-row sm:items-center sm:gap-4" variants={itemVariants}>
               <Button href={heroCopy.primaryCta.href} variant="primary" variants={itemVariants}>
                 {heroCopy.primaryCta.label}
               </Button>

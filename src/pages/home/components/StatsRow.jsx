@@ -7,11 +7,11 @@ function StatsRow({ motionProps }) {
   return (
     <motion.section
       id="process"
-      className="mt-7 border-t border-[color:var(--line)] pt-7"
+      className="mt-6 border-t border-[color:var(--line)] pt-6 scroll-mt-28 sm:mt-7 sm:pt-7 sm:scroll-mt-32"
       {...motionProps}
       variants={containerVariants}
     >
-      <div className="grid gap-5 md:grid-cols-4">
+      <div className="grid gap-4 sm:gap-5 sm:grid-cols-2 lg:grid-cols-4">
         {stats.map((stat, index) => (
           <StatItem key={`${stat.label}-${index}`} stat={stat} variants={itemVariants} />
         ))}

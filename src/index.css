@@ -18,18 +18,26 @@
   html {
     min-height: 100%;
     background: var(--bg);
+    scroll-behavior: smooth;
+    overflow-x: clip;
   }
 
   body {
     margin: 0;
-    min-width: 320px;
     min-height: 100%;
     background: var(--bg);
     color: var(--fg);
     font-family: var(--font-sans);
+    overflow-x: clip;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
   }
 
   #root {

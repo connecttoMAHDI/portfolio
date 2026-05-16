@@ -9,14 +9,14 @@ function SelectedWorkSection({ motionProps }) {
     <motion.section
       id="selected-work"
       aria-labelledby="selected-work-title"
-      className="w-full bg-[color:var(--section-wash)] py-20"
+      className="w-full scroll-mt-28 bg-[color:var(--section-wash)] py-14 sm:py-16 md:py-20 lg:py-[120px] sm:scroll-mt-32"
       {...motionProps}
       variants={containerVariants}
     >
       <SectionContainer>
-        <div className="space-y-8 lg:space-y-10">
+        <div className="space-y-6 lg:space-y-10">
           <motion.div
-            className="grid gap-6 border-b border-[color:var(--line)] pb-8 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)_auto] lg:items-end lg:gap-8 lg:pb-10"
+            className="grid gap-5 border-b border-[color:var(--line)] pb-6 sm:gap-6 sm:pb-8 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)_auto] lg:items-end lg:gap-8 lg:pb-10"
             variants={containerVariants}
           >
             <div className="max-w-[28rem]">
@@ -84,8 +84,8 @@ function ProjectCard({ project, featured = false }) {
       >
         <ProjectImage image={project.image} featured={featured} />
 
-        <div className={`flex flex-col justify-between gap-6 p-5 sm:p-6 lg:p-8 ${featured ? 'lg:p-8' : 'lg:p-7'}`}>
-          <div className="space-y-3">
+        <div className={`flex flex-col justify-between gap-5 p-4 sm:p-6 lg:p-8 ${featured ? 'lg:p-8' : 'lg:p-7'}`}>
+          <div className="space-y-2.5">
             <p className="text-[0.66rem] font-medium uppercase tracking-[0.34em] text-[color:var(--muted)]">
               {project.eyebrow}
             </p>
@@ -143,7 +143,7 @@ function ProjectCard({ project, featured = false }) {
 function ProjectImage({ image, featured }) {
   return (
     <div
-      className={`relative min-h-[18rem] overflow-hidden bg-[color:var(--surface)] ${
+      className={`relative min-h-[14rem] overflow-hidden bg-[color:var(--surface)] sm:min-h-[16rem] ${
         featured ? 'lg:min-h-[31rem]' : 'lg:min-h-[24rem]'
       }`}
     >

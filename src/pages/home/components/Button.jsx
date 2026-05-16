@@ -4,7 +4,7 @@ const variantStyles = {
   primary:
     'inline-flex items-center justify-center gap-2 rounded-full bg-[oklch(15%_0.014_74)] px-5 py-2.5 text-sm font-medium text-[color:var(--bg)]',
   underline:
-    'inline-flex items-center gap-2 border-b border-[color:var(--line)] pb-1 text-sm font-medium text-[color:var(--muted-strong)] transition-colors duration-300 ease-out hover:text-[color:var(--fg)]',
+    'inline-flex justify-center items-center gap-2 border-b border-[color:var(--line)] pb-1 text-sm font-medium text-[color:var(--muted-strong)] transition-colors duration-300 ease-out hover:text-[color:var(--fg)]',
   link: 'inline-flex items-center gap-2 text-sm font-medium text-[color:var(--muted-strong)] transition-colors duration-300 ease-out hover:text-[color:var(--fg)]',
 }
 

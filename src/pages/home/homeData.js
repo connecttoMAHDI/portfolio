@@ -40,7 +40,7 @@ export const heroCopy = {
 }
 
 export const heroImage = {
-  src: '/assets/hero.png',
+  src: '/assets/hero.jpg',
   alt: 'Editorial portrait of the featured developer in soft natural light',
 }
 

@@ -6,11 +6,11 @@ function TrustRow({ motionProps }) {
   return (
     <motion.section
       id="trusted-by"
-      className="mt-10 border-t border-[color:var(--line)] pt-7 lg:mt-10 lg:pt-7"
+      className="mt-8 border-t border-[color:var(--line)] pt-5 md:mt-10 md:pt-7"
       {...motionProps}
       variants={containerVariants}
     >
-      <div className="grid gap-5 lg:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)] lg:items-center">
+      <div className="grid gap-4 lg:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)] lg:items-center">
         <motion.p
           className="text-[0.68rem] font-medium uppercase tracking-[0.24em] text-[color:var(--muted)]"
           variants={itemVariants}
@@ -19,7 +19,7 @@ function TrustRow({ motionProps }) {
         </motion.p>
 
         <motion.ul
-          className="flex flex-wrap items-center gap-x-8 gap-y-3 text-[0.78rem] font-medium tracking-[0.14em] uppercase text-[color:var(--muted-strong)] sm:gap-x-10"
+          className="flex flex-wrap items-center gap-x-6 gap-y-2.5 text-[0.78rem] font-medium tracking-[0.14em] uppercase text-[color:var(--muted-strong)] sm:gap-x-8 sm:gap-y-3 md:gap-x-10"
           variants={containerVariants}
         >
           {logos.map((logo) => (

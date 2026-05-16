@@ -7,7 +7,7 @@ import HeroImage from './HeroImage.jsx'
 function HeroVisual({ motionProps }) {
   return (
     <motion.div className="relative lg:justify-self-end lg:pt-4" {...motionProps} variants={imageVariants}>
-      <div className="relative ml-auto w-full max-w-[28rem] pb-14 md:pb-16">
+      <div className="relative ml-auto w-full max-w-[28rem] pb-2 sm:pb-6 md:pb-14">
         <HeroImage image={heroImage} />
         <AvailabilityCard motionProps={motionProps} />
       </div>
