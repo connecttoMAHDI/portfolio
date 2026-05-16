@@ -9,11 +9,11 @@ function SelectedWorkSection({ motionProps }) {
     <motion.section
       id="selected-work"
       aria-labelledby="selected-work-title"
-      className="w-full scroll-mt-28 bg-[color:var(--section-wash)] py-14 sm:py-16 md:py-20 lg:py-[120px] sm:scroll-mt-32"
+      className="living-work-section relative isolate w-full scroll-mt-28 overflow-hidden bg-[color:var(--section-wash)] py-14 sm:py-16 md:py-20 lg:py-[120px] sm:scroll-mt-32"
       {...motionProps}
       variants={containerVariants}
     >
-      <SectionContainer>
+      <SectionContainer className="relative z-10">
         <div className="space-y-6 lg:space-y-10">
           <motion.div
             className="grid gap-5 border-b border-[color:var(--line)] pb-6 sm:gap-6 sm:pb-8 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)_auto] lg:items-end lg:gap-8 lg:pb-10"
@@ -55,11 +55,11 @@ function SelectedWorkSection({ motionProps }) {
           </motion.div>
 
           <motion.div className="space-y-6 lg:space-y-7" variants={containerVariants}>
-            <ProjectCard project={selectedWorkProjects[0]} featured />
+            <ProjectCard project={selectedWorkProjects[0]} featured index={0} />
 
             <motion.div className="grid gap-6 lg:grid-cols-2" variants={containerVariants}>
-              {selectedWorkProjects.slice(1).map((project) => (
-                <ProjectCard key={project.title} project={project} />
+              {selectedWorkProjects.slice(1).map((project, index) => (
+                <ProjectCard key={project.title} project={project} index={index + 1} />
               ))}
             </motion.div>
           </motion.div>
@@ -69,10 +69,10 @@ function SelectedWorkSection({ motionProps }) {
   )
 }
 
-function ProjectCard({ project, featured = false }) {
+function ProjectCard({ project, featured = false, index }) {
   return (
     <motion.article
-      className="overflow-hidden rounded-[2rem] border border-[color:var(--line)] bg-[color:var(--panel)]"
+      className="living-project-card overflow-hidden rounded-[2rem] border border-[color:var(--line)] bg-[color:var(--panel)]"
       variants={itemVariants}
     >
       <div
@@ -82,7 +82,7 @@ function ProjectCard({ project, featured = false }) {
             : 'lg:grid-cols-[minmax(0,0.84fr)_minmax(0,1.16fr)]'
         }`}
       >
-        <ProjectImage image={project.image} featured={featured} />
+        <ProjectImage frameNumber={String(index + 1).padStart(2, '0')} image={project.image} featured={featured} />
 
         <div className={`flex flex-col justify-between gap-5 p-4 sm:p-6 lg:p-8 ${featured ? 'lg:p-8' : 'lg:p-7'}`}>
           <div className="space-y-2.5">
@@ -140,18 +140,19 @@ function ProjectCard({ project, featured = false }) {
   )
 }
 
-function ProjectImage({ image, featured }) {
+function ProjectImage({ frameNumber, image, featured }) {
   return (
     <div
-      className={`relative min-h-[14rem] overflow-hidden bg-[color:var(--surface)] sm:min-h-[16rem] ${
+      className={`living-work-frame relative min-h-[14rem] overflow-hidden bg-[color:var(--surface)] sm:min-h-[16rem] ${
         featured ? 'lg:min-h-[31rem]' : 'lg:min-h-[24rem]'
       }`}
+      data-frame={frameNumber}
     >
       <img
         src={image.src}
         alt={image.alt}
-        className="absolute inset-0 h-full w-full object-cover object-center"
-        loading="lazy"
+        className="living-work-frame__image absolute inset-0 h-full w-full object-cover object-center"
+        loading={featured ? 'eager' : 'lazy'}
         decoding="async"
       />
     </div>
