@@ -1,0 +1,377 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-05-16T07:56:56Z",
+  "title": "Design System: Design Lab Portfolio",
+  "extensions": {
+    "northStar": "The Gallery Label",
+    "breakpoints": [
+      { "name": "sm", "value": "640px" },
+      { "name": "md", "value": "768px" },
+      { "name": "lg", "value": "1024px" },
+      { "name": "xl", "value": "1280px" },
+      { "name": "2xl", "value": "1536px" }
+    ],
+    "motion": [
+      {
+        "name": "ease-expressive",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Default easing for the hero's reveal motion."
+      },
+      {
+        "name": "stagger-hero",
+        "value": "80ms",
+        "purpose": "Offset between nav, copy, image, and supporting rows."
+      },
+      {
+        "name": "delay-hero",
+        "value": "50ms",
+        "purpose": "Initial delay before the first hero group appears."
+      },
+      {
+        "name": "enter-copy",
+        "value": "800ms",
+        "purpose": "Copy column fade and rise."
+      },
+      {
+        "name": "enter-image",
+        "value": "950ms",
+        "purpose": "Portrait reveal."
+      },
+      {
+        "name": "enter-card",
+        "value": "720ms",
+        "purpose": "Availability card reveal."
+      }
+    ],
+    "shadows": [],
+    "elevationMeta": {
+      "strategy": "Flat by default. Depth comes from borders, tone, rounded corners, crop, and overlap.",
+      "shadowless": true,
+      "depthSources": [
+        "border contrast",
+        "tonal separation",
+        "image crop",
+        "overlap"
+      ],
+      "notes": [
+        "Do not introduce ambient shadow stacks.",
+        "The availability card should feel placed, not floated."
+      ]
+    },
+    "colorMeta": {
+      "neutral-bg": {
+        "role": "neutral",
+        "displayName": "Warm Paper",
+        "canonical": "oklch(99.2% 0.003 92)",
+        "tonalRamp": [
+          "oklch(18% 0.02 92)",
+          "oklch(30% 0.015 92)",
+          "oklch(42% 0.011 92)",
+          "oklch(55% 0.009 92)",
+          "oklch(68% 0.007 92)",
+          "oklch(80% 0.005 92)",
+          "oklch(92% 0.004 92)",
+          "oklch(99.2% 0.003 92)"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Linen Surface",
+        "canonical": "oklch(98.2% 0.004 92)",
+        "tonalRamp": [
+          "oklch(17% 0.02 92)",
+          "oklch(29% 0.016 92)",
+          "oklch(41% 0.012 92)",
+          "oklch(53% 0.01 92)",
+          "oklch(65% 0.008 92)",
+          "oklch(77% 0.006 92)",
+          "oklch(89% 0.005 92)",
+          "oklch(98.2% 0.004 92)"
+        ]
+      },
+      "highlight": {
+        "role": "neutral",
+        "displayName": "Highlight Wash",
+        "canonical": "oklch(95% 0.006 92)",
+        "tonalRamp": [
+          "oklch(18% 0.02 90)",
+          "oklch(30% 0.016 90)",
+          "oklch(42% 0.012 90)",
+          "oklch(54% 0.01 90)",
+          "oklch(66% 0.008 90)",
+          "oklch(78% 0.006 90)",
+          "oklch(90% 0.005 90)",
+          "oklch(95% 0.006 92)"
+        ]
+      },
+      "ink": {
+        "role": "primary",
+        "displayName": "Ink",
+        "canonical": "oklch(19.5% 0.016 74)",
+        "tonalRamp": [
+          "oklch(15% 0.02 74)",
+          "oklch(24% 0.018 74)",
+          "oklch(33% 0.016 74)",
+          "oklch(43% 0.014 74)",
+          "oklch(53% 0.012 74)",
+          "oklch(64% 0.01 74)",
+          "oklch(76% 0.008 74)",
+          "oklch(89% 0.006 74)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Quiet Taupe",
+        "canonical": "oklch(54.5% 0.012 74)",
+        "tonalRamp": [
+          "oklch(22% 0.018 74)",
+          "oklch(31% 0.016 74)",
+          "oklch(40% 0.014 74)",
+          "oklch(49% 0.012 74)",
+          "oklch(58% 0.011 74)",
+          "oklch(67% 0.009 74)",
+          "oklch(76% 0.007 74)",
+          "oklch(85% 0.006 74)"
+        ]
+      },
+      "muted-strong": {
+        "role": "neutral",
+        "displayName": "Deep Taupe",
+        "canonical": "oklch(36.5% 0.013 74)",
+        "tonalRamp": [
+          "oklch(16% 0.019 74)",
+          "oklch(24% 0.017 74)",
+          "oklch(33% 0.015 74)",
+          "oklch(42% 0.013 74)",
+          "oklch(51% 0.011 74)",
+          "oklch(60% 0.01 74)",
+          "oklch(69% 0.008 74)",
+          "oklch(78% 0.007 74)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Soft Line",
+        "canonical": "oklch(91.5% 0.007 90)",
+        "tonalRamp": [
+          "oklch(18% 0.02 90)",
+          "oklch(30% 0.015 90)",
+          "oklch(42% 0.011 90)",
+          "oklch(54% 0.009 90)",
+          "oklch(66% 0.007 90)",
+          "oklch(78% 0.006 90)",
+          "oklch(90% 0.005 90)",
+          "oklch(96% 0.004 90)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display Serif",
+        "purpose": "Hero headline only, the emotional anchor.",
+        "fontFamily": "Iowan Old Style, Baskerville, Palatino Linotype, Georgia, serif",
+        "fontSize": "clamp(2.45rem, 4.1vw, 4.6rem)",
+        "fontWeight": 300,
+        "lineHeight": 0.94,
+        "letterSpacing": "-0.075em",
+        "maxLineLength": "12ch"
+      },
+      "headline": {
+        "displayName": "UI Sans",
+        "purpose": "Small emphatic labels, action text, and compact hero lines.",
+        "fontFamily": "Avenir Next, Helvetica Neue, Segoe UI, system-ui, sans-serif",
+        "fontSize": "1rem",
+        "fontWeight": 500,
+        "lineHeight": 1,
+        "letterSpacing": "-0.02em"
+      },
+      "body": {
+        "displayName": "Body Sans",
+        "purpose": "Paragraph copy and support text.",
+        "fontFamily": "Avenir Next, Helvetica Neue, Segoe UI, system-ui, sans-serif",
+        "fontSize": "0.95rem",
+        "fontWeight": 400,
+        "lineHeight": 1.6,
+        "letterSpacing": "0em",
+        "maxLineLength": "34ch"
+      },
+      "label": {
+        "displayName": "Micro Label",
+        "purpose": "Trust row labels, stat labels, and other metadata.",
+        "fontFamily": "Avenir Next, Helvetica Neue, Segoe UI, system-ui, sans-serif",
+        "fontSize": "0.68rem",
+        "fontWeight": 500,
+        "lineHeight": 1,
+        "letterSpacing": "0.24em",
+        "case": "uppercase"
+      },
+      "eyebrow": {
+        "displayName": "Eyebrow",
+        "purpose": "The tiny studio line above the hero headline.",
+        "fontFamily": "Avenir Next, Helvetica Neue, Segoe UI, system-ui, sans-serif",
+        "fontSize": "0.7rem",
+        "fontWeight": 500,
+        "lineHeight": 1,
+        "letterSpacing": "0.34em",
+        "case": "uppercase"
+      }
+    },
+    "componentMeta": {
+      "page-shell": {
+        "kind": "custom",
+        "description": "One-screen desktop shell with max-width 1440px and responsive padding.",
+        "shape": "rectangular",
+        "size": "100svh desktop contract",
+        "behavior": "Locks the composition into a single hero view on large screens."
+      },
+      "button-primary": {
+        "kind": "button",
+        "description": "Primary pill CTA used in the hero and header.",
+        "shape": "pill",
+        "size": "10px 20px",
+        "behavior": "Small, dark, and tactile. Hover lifts slightly."
+      },
+      "button-secondary": {
+        "kind": "button",
+        "description": "Secondary text action with a quiet underline.",
+        "shape": "flat",
+        "size": "0 0 4px",
+        "behavior": "Underline reads as a link, not a button banner."
+      },
+      "nav-link": {
+        "kind": "nav",
+        "description": "Minimal header link in small tracked text.",
+        "shape": "flat",
+        "behavior": "Muted by default, darker on hover."
+      },
+      "hero-image": {
+        "kind": "card",
+        "description": "Rounded portrait frame with a 7:8 crop.",
+        "shape": "rounded",
+        "size": "28rem wide",
+        "behavior": "Editorial image first, container second."
+      },
+      "status-card": {
+        "kind": "card",
+        "description": "Floating availability note that overlaps the portrait.",
+        "shape": "rounded",
+        "size": "15rem wide",
+        "behavior": "Placed against the lower-right edge rather than floated with shadow."
+      },
+      "trust-row": {
+        "kind": "custom",
+        "description": "Single-line proof strip for partner names.",
+        "shape": "flat",
+        "behavior": "Small, tracked, and quiet."
+      },
+      "stats-row": {
+        "kind": "custom",
+        "description": "Capability strip with numbers and brief support copy.",
+        "shape": "flat",
+        "behavior": "Four compact columns on desktop, stacked on smaller screens."
+      }
+    },
+    "components": [
+      {
+        "name": "Primary Button",
+        "kind": "button",
+        "refersTo": "button-primary",
+        "description": "Main hero CTA and header CTA.",
+        "html": "<button class='ds-btn-primary' type='button'>View My Work <span aria-hidden='true'>↗</span></button>",
+        "css": ".ds-btn-primary { display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; border: 0; border-radius: 9999px; padding: 0.625rem 1.25rem; background: var(--fg); color: var(--bg); font-family: var(--font-sans); font-size: 0.875rem; font-weight: 500; line-height: 1; text-decoration: none; transition: transform 300ms ease, background-color 300ms ease, color 300ms ease; } .ds-btn-primary:hover { transform: translateY(-2px); } .ds-btn-primary:focus-visible { outline: 2px solid var(--line); outline-offset: 2px; }"
+      },
+      {
+        "name": "Secondary Link",
+        "kind": "button",
+        "refersTo": "button-secondary",
+        "description": "Text-first secondary action with an underline.",
+        "html": "<a class='ds-link-secondary' href='#about'>About Me</a>",
+        "css": ".ds-link-secondary { display: inline-flex; align-items: center; border-bottom: 1px solid var(--line); padding-bottom: 0.25rem; color: var(--muted-strong); font-family: var(--font-sans); font-size: 0.875rem; font-weight: 500; line-height: 1; text-decoration: none; transition: color 300ms ease, transform 300ms ease, border-color 300ms ease; } .ds-link-secondary:hover { color: var(--fg); transform: translateX(2px); } .ds-link-secondary:focus-visible { outline: 2px solid var(--line); outline-offset: 3px; }"
+      },
+      {
+        "name": "Nav Link",
+        "kind": "nav",
+        "refersTo": "nav-link",
+        "description": "Small minimal header link.",
+        "html": "<a class='ds-nav-link' href='#selected-work'>Work</a>",
+        "css": ".ds-nav-link { color: var(--muted-strong); font-family: var(--font-sans); font-size: 0.875rem; font-weight: 500; line-height: 1; text-decoration: none; transition: color 300ms ease, transform 300ms ease; } .ds-nav-link:hover { color: var(--fg); } .ds-nav-link:focus-visible { outline: 2px solid var(--line); outline-offset: 3px; }"
+      },
+      {
+        "name": "Hero Image Frame",
+        "kind": "card",
+        "refersTo": "hero-image",
+        "description": "Rounded portrait frame for the main hero image.",
+        "html": "<figure class='ds-hero-image'><img src='/assets/hero.png' alt='Editorial portrait of the featured developer in soft natural light' /></figure>",
+        "css": ".ds-hero-image { width: min(28rem, 100%); margin: 0; border: 1px solid var(--line); border-radius: 32px; overflow: hidden; background: var(--panel); } .ds-hero-image img { display: block; width: 100%; aspect-ratio: 7 / 8; object-fit: cover; object-position: 62% center; }"
+      },
+      {
+        "name": "Availability Card",
+        "kind": "card",
+        "refersTo": "status-card",
+        "description": "Small overlapping status note placed against the portrait.",
+        "html": "<aside class='ds-status-card'><div class='ds-status-chip'><span class='ds-status-dot' aria-hidden='true'></span><span class='ds-status-label'>Open for select projects.</span></div><p>Replies within one business day.</p></aside>",
+        "css": ".ds-status-card { width: min(15rem, 100%); border: 1px solid var(--line); border-radius: 19px; background: var(--panel); padding: 0.875rem 1rem; color: var(--fg); } .ds-status-chip { display: flex; align-items: center; gap: 0.5rem; } .ds-status-dot { width: 0.5rem; height: 0.5rem; border-radius: 9999px; background: var(--muted-strong); } .ds-status-label { font-family: var(--font-sans); font-size: 0.72rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); } .ds-status-card p { margin: 0.5rem 0 0; font-family: var(--font-sans); font-size: 0.875rem; line-height: 1.5; color: var(--muted-strong); }"
+      },
+      {
+        "name": "Trust Row",
+        "kind": "custom",
+        "refersTo": "trust-row",
+        "description": "Quiet logo strip that sits below the hero.",
+        "html": "<section class='ds-trust-row'><p>Trusted by ambitious brands</p><ul><li>Vercel</li><li>Webflow</li><li>Framer</li><li>Next.js</li><li>Tailwind</li><li>Supabase</li></ul></section>",
+        "css": ".ds-trust-row { border-top: 1px solid var(--line); padding-top: 1.5rem; display: grid; gap: 1.25rem; } .ds-trust-row p { margin: 0; font-family: var(--font-sans); font-size: 0.68rem; font-weight: 500; letter-spacing: 0.24em; text-transform: uppercase; color: var(--muted); } .ds-trust-row ul { margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 0.75rem 2rem; font-family: var(--font-sans); font-size: 0.78rem; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted-strong); }"
+      },
+      {
+        "name": "Stats Row",
+        "kind": "custom",
+        "refersTo": "stats-row",
+        "description": "Four-column capability strip with numbers and support copy.",
+        "html": "<section class='ds-stats-row'><article class='ds-stat'><div class='ds-stat-header'><span class='ds-stat-value'>03</span><span class='ds-stat-label'>Disciplines</span></div><p class='ds-stat-detail'>Strategy, interface design, and front-end build.</p></article><article class='ds-stat'><div class='ds-stat-header'><span class='ds-stat-value'>12</span><span class='ds-stat-label'>Launches</span></div><p class='ds-stat-detail'>Portfolio sites, product pages, and brand moments.</p></article><article class='ds-stat'><div class='ds-stat-header'><span class='ds-stat-value'>24h</span><span class='ds-stat-label'>Reply time</span></div><p class='ds-stat-detail'>Fast responses for new project inquiries.</p></article><article class='ds-stat'><div class='ds-stat-header'><span class='ds-stat-value'>24h</span><span class='ds-stat-label'>Reply time</span></div><p class='ds-stat-detail'>Fast responses for new project inquiries.</p></article></section>",
+        "css": ".ds-stats-row { border-top: 1px solid var(--line); padding-top: 1.25rem; display: grid; gap: 1.25rem; } .ds-stat { display: flex; flex-direction: column; align-items: center; gap: 0.375rem; } .ds-stat-header { display: flex; align-items: end; gap: 0.75rem; } .ds-stat-value { font-family: var(--font-sans); font-size: 1.8rem; font-weight: 600; line-height: 1; letter-spacing: -0.05em; font-variant-numeric: tabular-nums; color: var(--fg); } .ds-stat-label { font-family: var(--font-sans); font-size: 0.68rem; font-weight: 500; letter-spacing: 0.24em; text-transform: uppercase; color: var(--muted); } .ds-stat-detail { max-width: 22ch; margin: 0; font-family: var(--font-sans); font-size: 0.9rem; line-height: 1.45; text-align: center; color: var(--muted-strong); } @media (min-width: 768px) { .ds-stats-row { grid-template-columns: repeat(4, minmax(0, 1fr)); } }"
+      }
+    ],
+    "narrative": {
+      "northStar": "The Gallery Label",
+      "overview": "This system frames the portfolio like a museum label beside a large portrait, calm, specific, and expensive without trying too hard. The left column carries the voice, the right column carries the image, and the lower rows provide proof without competing with the hero. On desktop the whole composition is meant to read at a glance inside a `100svh` viewport, so the page feels complete before any scroll.\n\nThe visual language is minimal, editorial, and warm. It rejects startup clutter, generic AI SaaS layouts, loud gradients, glassmorphism, heavy shadows, neon accents, and anything that makes the page feel like a template trying to perform sophistication. Structure comes from typography, crop, overlap, and measured whitespace, not decoration.",
+      "keyCharacteristics": [
+        "warm paper background, charcoal text, linen borders",
+        "serif display type paired with a grounded sans body face",
+        "left text column, right portrait column, floating status card",
+        "flat surfaces with overlap instead of shadow theatrics",
+        "compact support rows for trust and stats, never noisy card grids",
+        "full hero visibility on desktop, looser stack on mobile"
+      ],
+      "rules": [
+        {
+          "name": "The One Ink Rule",
+          "section": "colors",
+          "body": "Keep the system in warm neutrals and a single dark ink tone. If a new accent cannot justify itself as paper, linen, taupe, or ink, it does not belong."
+        },
+        {
+          "name": "The Mixed-Line Rule",
+          "section": "typography",
+          "body": "The hero can mix sans and serif inside the same headline, but the contrast should stay restrained. One line of sans, one or two lines of serif, then stop."
+        },
+        {
+          "name": "The Flat-By-Default Rule",
+          "section": "elevation",
+          "body": "Use borders and overlap before shadow. If a surface needs more hierarchy, change the layout or the tone, not the blur."
+        }
+      ],
+      "dos": [
+        "Do keep the desktop shell inside `100svh` and `overflow-hidden` so the full hero is visible at one glance.",
+        "Do keep the headline compact, around `12ch`, with the body at `34ch`.",
+        "Do keep the image around `28rem` wide with a `7:8` crop and the floating card around `15rem` wide.",
+        "Do use the existing warm neutral palette, with the page background, image frame, and support surfaces staying close in value.",
+        "Do let the left column and right column feel intentionally asymmetrical, but never disconnected."
+      ],
+      "donts": [
+        "Don't introduce gradients, glassmorphism, glowing effects, or heavy shadows.",
+        "Don't turn the hero into a generic centered SaaS stack or a startup-style cluttered landing page.",
+        "Don't let body copy run wide, the type should stay calm and readable, not stretched across the screen.",
+        "Don't use border-left or border-right greater than `1px` as a colored accent.",
+        "Don't add extra accent colors, random floating shapes, or identical card grids that make the page feel templated.",
+        "Don't push the image so tall that the hero stops reading as one composition."
+      ]
+    }
+  }
+}
