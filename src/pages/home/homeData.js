@@ -2,7 +2,7 @@ export const siteMark = 'M.'
 
 export const headerCta = {
   label: "Let's Work Together",
-  href: 'mailto:hello@design-lab.dev',
+  href: '#contact',
 }
 
 export const navLinks = [
@@ -24,7 +24,7 @@ export const navLinks = [
   },
   {
     label: 'Contact',
-    href: 'mailto:hello@design-lab.dev',
+    href: '#contact',
   },
 ]
 
@@ -151,6 +151,41 @@ export const faqItems = [
     ],
   },
 ]
+
+export const contactIntro = {
+  eyebrow: 'Next Step',
+  title: ["Let's make", 'something', 'worth shipping.'],
+  description: "A focused website, a product launch, or a fresh rebuild, let's talk through it.",
+  primaryCta: {
+    label: 'Book a 20-min call',
+    href: 'mailto:hi@mahdi.dev?subject=Project%20call',
+  },
+  secondaryCta: {
+    label: 'Or email',
+    href: 'mailto:hi@mahdi.dev',
+  },
+}
+
+export const contactForm = {
+  eyebrow: 'Quick Brief',
+  email: 'hi@mahdi.dev',
+  status: 'Replies within 1 biz day',
+  submitLabel: 'Send',
+  fields: {
+    name: {
+      label: 'Name',
+      placeholder: 'Your name',
+    },
+    email: {
+      label: 'Email',
+      placeholder: 'you@company.com',
+    },
+    message: {
+      label: 'What are you building?',
+      placeholder: 'Tell us about your project, goals, and timeline...',
+    },
+  },
+}
 
 export const processIntro = {
   eyebrow: 'Process',

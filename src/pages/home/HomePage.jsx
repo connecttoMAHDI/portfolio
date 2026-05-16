@@ -1,4 +1,5 @@
 import { useReducedMotion } from 'framer-motion'
+import ContactSection from './components/ContactSection.jsx'
 import FaqSection from './components/FaqSection.jsx'
 import Header from './components/Header.jsx'
 import HeroSection from './components/HeroSection.jsx'
@@ -24,6 +25,7 @@ function HomePage() {
           <ProcessSection motionProps={motionProps} />
           <ProofSection motionProps={motionProps} />
           <FaqSection motionProps={motionProps} />
+          <ContactSection motionProps={motionProps} />
         </main>
       </div>
     </div>
