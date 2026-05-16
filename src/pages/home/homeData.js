@@ -96,6 +96,62 @@ export const proofSignals = [
   },
 ]
 
+export const faqIntro = {
+  eyebrow: 'FAQ',
+  title: ['Questions,', 'answered.'],
+  description: 'Anything else? Email is the fastest way, replies within one business day.',
+  cta: {
+    label: 'hi@mahdi.dev',
+    href: 'mailto:hi@mahdi.dev',
+  },
+}
+
+export const faqItems = [
+  {
+    id: 'project-cost',
+    question: 'How much does a project cost?',
+    answer: [
+      "Pricing depends on the scope, timeline, and complexity of your project. After a short discovery call, I'll share a clear proposal with a fixed price and timeline.",
+      'Most projects fall into a range, but every build is quoted individually to fit your goals.',
+    ],
+  },
+  {
+    id: 'build-timeline',
+    question: 'How long does a build take?',
+    answer: [
+      'Most focused portfolio or marketing builds take three to six weeks once content and direction are clear. Smaller refreshes can move faster, larger sites get a staged timeline.',
+    ],
+  },
+  {
+    id: 'hosting',
+    question: 'Do you handle hosting?',
+    answer: [
+      'Yes. I can set up hosting, domains, analytics, forms, and deployment so the site is ready to manage after launch.',
+    ],
+  },
+  {
+    id: 'existing-designer',
+    question: 'What if I already have a designer?',
+    answer: [
+      'That works well. I can build from finished design files, tighten responsive states, and flag implementation issues before they become launch problems.',
+    ],
+  },
+  {
+    id: 'stack',
+    question: 'What stack do you use?',
+    answer: [
+      'I choose the stack around the project, but I usually work with React, Next.js, Tailwind, Framer Motion, headless CMS tools, and modern hosting on Vercel or similar platforms.',
+    ],
+  },
+  {
+    id: 'ongoing-support',
+    question: 'Do you offer ongoing support?',
+    answer: [
+      'Yes. After launch, I can stay close for improvements, new sections, content updates, performance checks, and small product iterations.',
+    ],
+  },
+]
+
 export const processIntro = {
   eyebrow: 'Process',
   title: ['How we work', 'together to deliver'],

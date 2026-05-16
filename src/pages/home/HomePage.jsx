@@ -1,4 +1,5 @@
 import { useReducedMotion } from 'framer-motion'
+import FaqSection from './components/FaqSection.jsx'
 import Header from './components/Header.jsx'
 import HeroSection from './components/HeroSection.jsx'
 import ProcessSection from './components/ProcessSection.jsx'
@@ -22,6 +23,7 @@ function HomePage() {
           <ServicesSection motionProps={motionProps} />
           <ProcessSection motionProps={motionProps} />
           <ProofSection motionProps={motionProps} />
+          <FaqSection motionProps={motionProps} />
         </main>
       </div>
     </div>
