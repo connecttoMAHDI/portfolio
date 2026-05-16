@@ -11,16 +11,20 @@ export const navLinks = [
     href: '#selected-work',
   },
   {
-    label: 'About',
-    href: '#about',
+    label: 'Services',
+    href: '#services',
   },
   {
     label: 'Process',
     href: '#process',
   },
   {
-    label: 'Services',
-    href: '#services',
+    label: 'Proof',
+    href: '#proof',
+  },
+  {
+    label: 'FAQ',
+    href: '#faq',
   },
   {
     label: 'Contact',
