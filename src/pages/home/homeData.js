@@ -15,8 +15,12 @@ export const navLinks = [
     href: '#about',
   },
   {
-    label: 'Services',
+    label: 'Process',
     href: '#process',
+  },
+  {
+    label: 'Services',
+    href: '#services',
   },
   {
     label: 'Contact',
@@ -56,6 +60,51 @@ export const selectedWorkIntro = {
     href: 'mailto:hello@design-lab.dev?subject=Portfolio%20projects',
   },
 }
+
+export const processIntro = {
+  eyebrow: 'Process',
+  title: ['How we work', 'together to deliver'],
+  highlight: 'results.',
+  description:
+    'A clear, four-phase process designed to move from clarity to impact. Collaborative, focused, and built to last.',
+  footer: 'Clear steps. Open communication. Thoughtful execution.',
+  footerHighlight: 'Every time.',
+}
+
+export const processSteps = [
+  {
+    number: '01',
+    title: 'Discovery',
+    icon: 'compass',
+    description:
+      'We align on goals, audience, and what success looks like. The upfront questions save time later.',
+    deliverables: ['Brief', 'Sitemap', 'Moodboard'],
+  },
+  {
+    number: '02',
+    title: 'Design',
+    icon: 'pen',
+    description:
+      'We translate strategy into structure and visuals, clean, intentional, and made to feel easy to use.',
+    deliverables: ['Wires', 'Visual System', 'Page Library'],
+  },
+  {
+    number: '03',
+    title: 'Build',
+    icon: 'code',
+    description:
+      'We bring the design to life with clean, scalable code, fast, accessible, and built for performance.',
+    deliverables: ['Components', 'CMS', 'Perf Budget'],
+  },
+  {
+    number: '04',
+    title: 'Launch',
+    icon: 'rocket',
+    description:
+      'We ship with confidence and stay close for a smooth handoff, practical QA, and ongoing support.',
+    deliverables: ['QA', 'Handoff', '30-Day Care'],
+  },
+]
 
 export const servicesIntro = {
   eyebrow: 'Services',

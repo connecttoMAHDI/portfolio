@@ -6,7 +6,6 @@ import StatItem from './StatItem.jsx'
 function StatsRow({ motionProps }) {
   return (
     <motion.section
-      id="process"
       className="mt-6 border-t border-[color:var(--line)] pt-6 scroll-mt-28 sm:mt-7 sm:pt-7 sm:scroll-mt-32"
       {...motionProps}
       variants={containerVariants}

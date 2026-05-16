@@ -7,7 +7,7 @@ import { containerVariants, itemVariants } from '../homeMotion.js'
 function ServicesSection({ motionProps }) {
   return (
     <motion.section
-      id="process"
+      id="services"
       aria-labelledby="services-title"
       className="w-full scroll-mt-28 py-14 sm:scroll-mt-32 sm:py-16 md:py-20 lg:py-[120px]"
       {...motionProps}
@@ -16,7 +16,7 @@ function ServicesSection({ motionProps }) {
       <SectionContainer>
         <div className="space-y-6 lg:space-y-10">
           <motion.div
-            className="grid gap-5 border-b border-[color:var(--line)] pb-6 sm:gap-6 sm:pb-8 lg:grid-cols-[minmax(0,1.08fr)_minmax(19rem,0.82fr)] lg:items-start lg:gap-12 lg:pb-10"
+            className="grid gap-5 border-b border-[color:var(--line)] pb-6 sm:gap-6 sm:pb-8 lg:grid-cols-[minmax(0,1.08fr)_minmax(19rem,0.82fr)] lg:items-end lg:gap-12 lg:pb-10"
             variants={containerVariants}
           >
             <div className="max-w-[45rem]">
