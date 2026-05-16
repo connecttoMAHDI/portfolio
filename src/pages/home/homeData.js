@@ -40,7 +40,7 @@ export const heroCopy = {
 }
 
 export const heroImage = {
-  src: '/assets/hero.jpg',
+  src: '/assets/hero-image.jpg',
   alt: 'Editorial portrait of the featured developer in soft natural light',
 }
 
@@ -56,6 +56,67 @@ export const selectedWorkIntro = {
     href: 'mailto:hello@design-lab.dev?subject=Portfolio%20projects',
   },
 }
+
+export const servicesIntro = {
+  eyebrow: 'Services',
+  title: ['Digital work,', 'shaped with intention.'],
+  description:
+    'I partner with ambitious brands to turn ideas into clear, useful digital experiences. From strategy to launch, each engagement is shaped to feel thoughtful, work cleanly, and support real business goals.',
+}
+
+export const services = [
+  {
+    number: '01',
+    title: 'Strategy & Direction',
+    icon: 'compass',
+    description:
+      'I start by getting clear on goals, audience, and positioning so the site has a sharp point of view before any screen gets designed.',
+    deliverables: [
+      'Brand and market positioning',
+      'Site structure and information architecture',
+      'Messaging and content strategy',
+      'Conversion planning and user journey mapping',
+    ],
+    cta: {
+      label: 'Learn More',
+      href: 'mailto:hello@design-lab.dev?subject=Strategy%20%26%20Direction',
+    },
+  },
+  {
+    number: '02',
+    title: 'Web Design',
+    icon: 'pen',
+    description:
+      'I craft responsive interfaces with strong hierarchy, clear pacing, and a material feel that stays refined on every screen size.',
+    deliverables: [
+      'Visual direction and design systems',
+      'UI design and component libraries',
+      'Responsive layouts and interactions',
+      'Brand-led, user-focused experiences',
+    ],
+    cta: {
+      label: 'Learn More',
+      href: 'mailto:hello@design-lab.dev?subject=Web%20Design',
+    },
+  },
+  {
+    number: '03',
+    title: 'Development & Launch',
+    icon: 'code',
+    description:
+      'I build with clean front-end code, thoughtful CMS structure, and the practical polish needed for a smooth launch.',
+    deliverables: [
+      'Next.js development and best practices',
+      'CMS integration and content modeling',
+      'Performance optimization and SEO',
+      'QA testing, deployment, and ongoing support',
+    ],
+    cta: {
+      label: 'Learn More',
+      href: 'mailto:hello@design-lab.dev?subject=Development%20%26%20Launch',
+    },
+  },
+]
 
 export const selectedWorkProjects = [
   {

@@ -4,6 +4,7 @@
   :root {
     color-scheme: light;
     --bg: oklch(99.2% 0.003 92);
+    --surface: oklch(97.2% 0.006 88);
     --panel: oklch(98.2% 0.004 92);
     --highlight: oklch(97.1% 0.006 88);
     --section-wash: oklch(94.8% 0.013 86);
