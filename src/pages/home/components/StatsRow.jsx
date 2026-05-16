@@ -7,7 +7,7 @@ function StatsRow({ motionProps }) {
   return (
     <motion.section
       id="process"
-      className="mt-5 border-t border-[color:var(--line)] pt-5"
+      className="mt-7 border-t border-[color:var(--line)] pt-7"
       {...motionProps}
       variants={containerVariants}
     >

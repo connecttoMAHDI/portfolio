@@ -4,7 +4,8 @@ description: Quiet editorial portfolio hero with warm neutrals, serif-sans contr
 colors:
   neutral-bg: "#FBFAF6"
   surface: "#F6F2EA"
-  highlight: "#EEEEE8"
+  highlight: "oklch(97.1% 0.006 88)"
+  section-wash: "oklch(94.8% 0.013 86)"
   ink: "#1A1713"
   muted: "#847B72"
   muted-strong: "#5D564D"
@@ -172,10 +173,12 @@ Compact, tactile, and quiet. The primary action should feel like a small object,
 - **Primary:** dark ink background, warm paper text, `10px 20px` padding.
 - **Hover / Focus:** tiny upward movement or color shift only. No glow, no bounce, no oversized scale.
 - **Secondary:** text-first, with a single low-contrast underline or bottom rule, `0 0 4px` padding.
+- **Shared variants:** primary, underline, and link are centralized in one component so motion and styling can change together.
 
 ### Cards / Containers
 Containers should feel like cut paper, not floating panels.
 - **Page shell:** max width `1440px`, horizontal padding `20px` on mobile, `32px` on small screens, `48px` on desktop, `64px` on wide screens, `100svh` desktop contract.
+- **Section shell:** each section owns its own full-bleed background, while an inner max-width wrapper keeps content aligned and lets color or imagery change per band.
 - **Hero image:** `28rem` wide, `7:8` ratio, `32px` radius, warm linen surface behind the crop.
 - **Availability card:** `15rem` wide, `19px` radius, `14px 16px` padding, positioned to overlap the lower right of the image.
 - **Border treatment:** always full borders or dividers, never colored side stripes.
@@ -185,6 +188,7 @@ Minimal and low-noise.
 - **Desktop:** one-letter mark on the left, inline links in the center, pill CTA on the right.
 - **Mobile:** the CTA can hide, links wrap naturally, and nothing should feel trapped in a menu.
 - **Typography:** small, muted, and tracked. The navbar should stay present but never dominate the hero.
+- **Scroll treatment:** the header can stick to the top with a soft blurred paper surface and a thin bottom rule so it stays readable over changing section backgrounds.
 
 ### Trust Row
 The trust row is a compact proof strip, not a logo wall.

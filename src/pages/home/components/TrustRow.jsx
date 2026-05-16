@@ -5,8 +5,8 @@ import { containerVariants, itemVariants } from '../homeMotion.js'
 function TrustRow({ motionProps }) {
   return (
     <motion.section
-      id="selected-work"
-      className="mt-8 border-t border-[color:var(--line)] pt-6 lg:mt-8 lg:pt-6"
+      id="trusted-by"
+      className="mt-10 border-t border-[color:var(--line)] pt-7 lg:mt-10 lg:pt-7"
       {...motionProps}
       variants={containerVariants}
     >

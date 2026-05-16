@@ -1,8 +1,7 @@
 import { useReducedMotion } from 'framer-motion'
 import Header from './components/Header.jsx'
 import HeroSection from './components/HeroSection.jsx'
-import StatsRow from './components/StatsRow.jsx'
-import TrustRow from './components/TrustRow.jsx'
+import SelectedWorkSection from './components/SelectedWorkSection.jsx'
 import { createMotionProps } from './homeMotion.js'
 
 function HomePage() {
@@ -11,15 +10,13 @@ function HomePage() {
 
   return (
     <div className="min-h-screen bg-[color:var(--bg)] text-[color:var(--fg)]">
-      <div className="mx-auto flex min-h-screen w-full max-w-[1440px] flex-col px-5 py-4 sm:px-8 lg:px-12 lg:py-4 xl:px-16">
+      <div className="flex min-h-screen w-full flex-col">
         <Header motionProps={motionProps} />
 
         <main id="top" className="flex min-h-0 flex-1 flex-col">
-          <section className="flex min-h-0 flex-1 flex-col justify-between pt-8 pb-6 lg:pt-6 lg:pb-5">
-            <HeroSection motionProps={motionProps} prefersReducedMotion={prefersReducedMotion} />
-            <TrustRow motionProps={motionProps} />
-            <StatsRow motionProps={motionProps} />
-          </section>
+          <HeroSection motionProps={motionProps} />
+
+          <SelectedWorkSection motionProps={motionProps} />
         </main>
       </div>
     </div>

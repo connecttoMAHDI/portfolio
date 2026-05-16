@@ -5,6 +5,8 @@
     color-scheme: light;
     --bg: oklch(99.2% 0.003 92);
     --panel: oklch(98.2% 0.004 92);
+    --highlight: oklch(97.1% 0.006 88);
+    --section-wash: oklch(94.8% 0.013 86);
     --fg: oklch(19.5% 0.016 74);
     --muted: oklch(54.5% 0.012 74);
     --muted-strong: oklch(36.5% 0.013 74);
