@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import Button from './Button.jsx'
 import SectionContainer from './SectionContainer.jsx'
+import SectionHeader from './SectionHeader.jsx'
 import { services, servicesIntro } from '../homeData.js'
 import { containerVariants, itemVariants } from '../homeMotion.js'
 
@@ -15,35 +16,12 @@ function ServicesSection({ motionProps }) {
     >
       <SectionContainer>
         <div className="space-y-6 lg:space-y-10">
-          <motion.div
-            className="grid gap-5 border-b border-[color:var(--line)] pb-6 sm:gap-6 sm:pb-8 lg:grid-cols-[minmax(0,1.08fr)_minmax(19rem,0.82fr)] lg:items-end lg:gap-12 lg:pb-10"
-            variants={containerVariants}
-          >
-            <div className="max-w-[45rem]">
-              <motion.p
-                className="text-[0.7rem] font-medium uppercase tracking-[0.34em] text-[color:var(--muted)]"
-                variants={itemVariants}
-              >
-                {servicesIntro.eyebrow}
-              </motion.p>
-
-              <motion.h2
-                id="services-title"
-                className="mt-4 max-w-[11.7ch] font-brand-serif text-[clamp(2.25rem,4vw,4.3rem)] font-light leading-[0.94] tracking-[-0.075em] text-[color:var(--fg)]"
-                variants={itemVariants}
-              >
-                <span className="block">{servicesIntro.title[0]}</span>
-                <span className="block">{servicesIntro.title[1]}</span>
-              </motion.h2>
-            </div>
-
-            <motion.p
-              className="max-w-[36ch] text-[0.95rem] leading-[1.62] text-[color:var(--muted-strong)] sm:text-[1rem] lg:justify-self-end"
-              variants={itemVariants}
-            >
-              {servicesIntro.description}
-            </motion.p>
-          </motion.div>
+          <SectionHeader
+            titleId="services-title"
+            eyebrow={servicesIntro.eyebrow}
+            title={servicesIntro.title}
+            description={servicesIntro.description}
+          />
 
           <motion.div
             className="grid gap-6 lg:grid-cols-[minmax(0,1.02fr)_minmax(0,0.98fr)_minmax(0,1.08fr)]"

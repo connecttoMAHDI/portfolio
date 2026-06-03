@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import SectionContainer from './SectionContainer.jsx'
+import SectionHeader from './SectionHeader.jsx'
 import { processIntro, processSteps } from '../homeData.js'
 import { containerVariants, itemVariants } from '../homeMotion.js'
 
@@ -14,42 +15,15 @@ function ProcessSection({ motionProps }) {
     >
       <SectionContainer>
         <div className="space-y-10 lg:space-y-12">
-          <motion.div
-            className="grid gap-8 lg:grid-cols-[minmax(0,1.06fr)_minmax(18rem,0.8fr)] lg:items-end lg:gap-12"
-            variants={containerVariants}
-          >
-            <div className="max-w-[45rem]">
-              <motion.p
-                className="text-[0.7rem] font-medium uppercase tracking-[0.34em] text-[color:var(--muted)]"
-                variants={itemVariants}
-              >
-                {processIntro.eyebrow}
-              </motion.p>
-
-              <motion.h2
-                id="process-title"
-                className="mt-5 max-w-[12ch] text-balance font-brand-serif text-[clamp(2.25rem,4vw,4.3rem)] font-light leading-[0.94] tracking-[-0.075em] text-[color:var(--fg)] sm:max-w-[13ch] lg:max-w-[16.25ch]"
-                variants={itemVariants}
-              >
-                <span className="block">{processIntro.title[0]}</span>
-                <span className="block">{processIntro.title[1]}</span>
-                <span className="relative mt-2 block w-fit italic text-[color:var(--muted-strong)]">
-                  <span className="relative z-10">{processIntro.highlight}</span>
-                  <span
-                    aria-hidden="true"
-                    className="absolute left-0 right-0 bottom-[-0.30em] -z-0 h-[1.3em] md:h-[1.2em] bg-[color:var(--highlight)]"
-                  />
-                </span>
-              </motion.h2>
-            </div>
-
-            <motion.p
-              className="max-w-[33ch] text-[0.95rem] leading-[1.65] text-[color:var(--muted-strong)] sm:text-[1rem] lg:justify-self-end"
-              variants={itemVariants}
-            >
-              {processIntro.description}
-            </motion.p>
-          </motion.div>
+          <SectionHeader
+            titleId="process-title"
+            eyebrow={processIntro.eyebrow}
+            title={processIntro.title}
+            highlight={processIntro.highlight}
+            description={processIntro.description}
+            titleClassName="mt-5 max-w-[12ch] text-balance text-[clamp(2.25rem,4vw,4.3rem)] leading-[0.94] sm:max-w-[13ch] lg:max-w-[16.25ch]"
+            descriptionClassName="max-w-[33ch] text-[0.95rem] leading-[1.65] sm:text-[1rem]"
+          />
 
           <motion.div className="flex items-center" variants={itemVariants}>
             <span aria-hidden="true" className="h-2.5 w-2.5 shrink-0 rounded-full bg-[color:var(--fg)]" />

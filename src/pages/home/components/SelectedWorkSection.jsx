@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import Button from './Button.jsx'
 import SectionContainer from './SectionContainer.jsx'
+import SectionHeader from './SectionHeader.jsx'
 import { selectedWorkIntro, selectedWorkProjects } from '../homeData.js'
 import { containerVariants, itemVariants } from '../homeMotion.js'
 
@@ -15,44 +16,14 @@ function SelectedWorkSection({ motionProps }) {
     >
       <SectionContainer className="relative z-10">
         <div className="space-y-6 lg:space-y-10">
-          <motion.div
-            className="grid gap-5 border-b border-[color:var(--line)] pb-6 sm:gap-6 sm:pb-8 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)_auto] lg:items-end lg:gap-8 lg:pb-10"
-            variants={containerVariants}
-          >
-            <div className="max-w-[28rem]">
-              <motion.p
-                className="text-[0.7rem] font-medium uppercase tracking-[0.34em] text-[color:var(--muted)]"
-                variants={itemVariants}
-              >
-                {selectedWorkIntro.eyebrow}
-              </motion.p>
-
-              <motion.h2
-                id="selected-work-title"
-                className="mt-4 max-w-[13ch] font-brand-serif text-[clamp(2.35rem,4vw,4.5rem)] font-light leading-[0.92] tracking-[-0.075em] text-[color:var(--fg)]"
-                variants={itemVariants}
-              >
-                {selectedWorkIntro.title}
-              </motion.h2>
-            </div>
-
-            <motion.p
-              className="max-w-[34ch] text-[0.95rem] leading-[1.6] text-[color:var(--muted-strong)] sm:text-[1rem]"
-              variants={itemVariants}
-            >
-              {selectedWorkIntro.description}
-            </motion.p>
-
-            <Button
-              href={selectedWorkIntro.cta.href}
-              className="self-start lg:justify-self-end"
-              icon="→"
-              variant="underline"
-              variants={itemVariants}
-            >
-              {selectedWorkIntro.cta.label}
-            </Button>
-          </motion.div>
+          <SectionHeader
+            titleId="selected-work-title"
+            eyebrow={selectedWorkIntro.eyebrow}
+            title={selectedWorkIntro.title}
+            description={selectedWorkIntro.description}
+            titleClassName="mt-4 max-w-[13ch] text-[clamp(2.35rem,4vw,4.5rem)] leading-[0.92]"
+            descriptionClassName="max-w-[34ch] text-[0.95rem] leading-[1.6] sm:text-[1rem]"
+          />
 
           <motion.div className="space-y-6 lg:space-y-7" variants={containerVariants}>
             <ProjectCard project={selectedWorkProjects[0]} featured index={0} />

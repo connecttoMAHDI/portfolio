@@ -5,7 +5,6 @@ import { heroCopy } from '../homeData.js'
 import { containerVariants, itemVariants } from '../homeMotion.js'
 import HeroVisual from './HeroVisual.jsx'
 import StatsRow from './StatsRow.jsx'
-import TrustRow from './TrustRow.jsx'
 
 function HeroSection({ motionProps }) {
   return (
@@ -21,11 +20,12 @@ function HeroSection({ motionProps }) {
             </motion.p>
 
             <motion.h1
-              className="mt-5 max-w-[12ch] font-brand-serif text-[clamp(2.35rem,4.1vw,4.6rem)] font-thin leading-[1.06] tracking-[-0.075em] text-[color:var(--fg)] sm:text-[clamp(2.45rem,4.1vw,4.6rem)] sm:leading-[0.94]"
+              className="mt-5 max-w-[22ch] font-brand-serif text-[clamp(2.35rem,4.1vw,4.6rem)] font-thin leading-[1.06] tracking-[-0.075em] text-[color:var(--fg)] sm:text-[clamp(2.45rem,4.1vw,4.6rem)] sm:leading-[0.94]"
               variants={itemVariants}
             >
-              <span className="block">{heroCopy.headline[0]}</span>
-              <span className="block">{heroCopy.headline[1]}</span>
+              <span>
+                {heroCopy.headline[0]} {heroCopy.headline[1]}{' '}
+              </span>
               <span className="relative inline-block italic text-[color:var(--muted-strong)]">
                 <span className="relative z-10">{heroCopy.headline[2]}</span>
                 <span
@@ -35,7 +35,7 @@ function HeroSection({ motionProps }) {
               </span>
             </motion.h1>
 
-            <motion.p className="mt-6 max-w-[34ch] text-[0.93rem] leading-[1.6] text-[color:var(--muted-strong)] sm:text-[1rem]" variants={itemVariants}>
+            <motion.p className="mt-6 max-w-[40ch] text-[0.93rem] leading-[1.6] text-[color:var(--muted-strong)] sm:text-[1rem]" variants={itemVariants}>
               {heroCopy.description}
             </motion.p>
 
@@ -53,7 +53,6 @@ function HeroSection({ motionProps }) {
           <HeroVisual motionProps={motionProps} />
         </div>
 
-        <TrustRow motionProps={motionProps} />
         <StatsRow motionProps={motionProps} />
       </SectionContainer>
     </section>

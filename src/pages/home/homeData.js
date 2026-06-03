@@ -55,7 +55,7 @@ export const heroImage = {
 export const logos = ['Vercel', 'Webflow', 'Framer', 'Next.js', 'Tailwind', 'Supabase']
 
 export const selectedWorkIntro = {
-  eyebrow: 'Our Work',
+  eyebrow: 'My Work',
   title: 'Selected Work',
   description:
     'We partner with ambitious brands to design and build digital experiences that are beautiful, functional, and built to perform.',
